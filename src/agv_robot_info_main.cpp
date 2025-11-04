@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
   rm.set_ip_address("169.254.5.180");
   rm.set_firmware_version("3.5.8");
   rm.set_maximum_payload("100 Kg");
+  rm.simulate_hydraulic_system_parameters("45C", "100%", "250 bar");
 
   // publish robot info
   rm.publish_data();

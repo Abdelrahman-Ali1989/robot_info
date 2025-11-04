@@ -205,7 +205,7 @@ add_library(${PROJECT_NAME}
 # catkin_add_nosetests(test)
 
 add_executable(robot_info_node src/robot_info_class.cpp src/robot_info_main.cpp)
-add_executable(agv_robot_info_node src/robot_info_class.cpp src/agv_robot_info_class.cpp src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp)
+add_executable(agv_robot_info_node src/robot_info_class.cpp src/agv_robot_info_class.cpp src/agv_robot_info_main.cpp src/hydraulic_system_monitor.cpp)
 target_link_libraries(robot_info_node ${catkin_LIBRARIES})
 add_dependencies(robot_info_node ${catkin_EXPORTED_TARGETS})
 add_dependencies(agv_robot_info_node ${catkin_EXPORTED_TARGETS})
